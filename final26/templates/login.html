@@ -48,25 +48,43 @@
 
         color: white;
     }
+.openpit-logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #172554, #2563eb);
 
-    .openpit-login-logo {
-        width: 48px;
-        height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-        border-radius: 13px;
+    position: relative;
+    overflow: hidden;
 
-        background: rgba(255,255,255,.12);
-        border: 1px solid rgba(255,255,255,.18);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.20);
+}
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+.openpit-logo::before,
+.openpit-logo::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    height: 7px;
+    border-radius: 50%;
+    transform: rotate(-8deg);
+}
 
-        margin-bottom: 28px;
+.openpit-logo::before {
+    top: 13px;
+    border: 2px solid rgba(255,255,255,.85);
+}
 
-        font-size: 16px;
-        font-weight: 800;
-    }
+.openpit-logo::after {
+    top: 21px;
+    border: 2px solid rgba(93, 234, 212, .9);
+}
+    
 
     .openpit-login-info h1 {
         margin: 0;
@@ -399,7 +417,7 @@
         <section class="openpit-login-info">
 
             <div class="openpit-login-logo">
-                OP
+                <span class="openpit-logo"></span>
             </div>
 
             <h1>
