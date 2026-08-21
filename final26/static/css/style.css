@@ -14429,3 +14429,40 @@ textarea{
     font-weight: 800;
     white-space: nowrap;
 }
+
+.openpit-logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #172554, #2563eb);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.20);
+}
+
+.openpit-logo::before,
+.openpit-logo::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    height: 7px;
+    border-radius: 50%;
+    transform: rotate(-8deg);
+}
+
+.openpit-logo::before {
+    top: 13px;
+    border: 2px solid rgba(255,255,255,.85);
+}
+
+.openpit-logo::after {
+    top: 21px;
+    border: 2px solid rgba(93, 234, 212, .9);
+}
